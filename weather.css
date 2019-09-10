@@ -1,0 +1,118 @@
+
+
+body {
+font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c6675;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1
+}
+body.sunny {
+    background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
+}
+body.cloudy {
+    background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+}
+body.rainy {
+    background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+}
+
+.temp {
+    display: flex
+}
+
+.celsius {
+    font-size: 1.4rem;
+    margin-top: -1px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+.celsius-o {
+    font-size: 12px;
+    margin: 0 3px;
+    opacity: 0.7
+}
+
+.weather-data {
+    display: flex;
+font-family: 'Open Sans', sans-serif;
+height: 80px
+}
+
+.sun-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
+.wind {
+        display: flex;
+        opacity: 0.7;
+}
+ 
+.wind h1 {
+     font-size: 0.7rem;
+}
+
+.temp-data {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px
+}
+
+#location {
+    text-align: left;
+    margin-bottom: 20px; 
+    font-weight: 700;
+}
+
+#main {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+#wind {
+    margin: 0 2px;
+}
+
+#temp {
+    font-weight: 400
+}
+
+
+/*loader*/
+
+ .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3c6675; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+        position: fixed;
+    top: 45%;
+    left: 45%;
+ }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
